@@ -1,0 +1,29 @@
+<mat-divider></mat-divider>
+
+<div ngClass="post-search">
+  <h4>Search post:</h4>
+  <mat-form-field appearance="fill">
+    <mat-label>Search</mat-label>
+    <input
+      id="post-input-search"
+      matInput
+      type="text"
+      placeholder="Search for a post"
+      [(ngModel)]="searchText"
+      maxlength="20"
+    />
+    <button
+      id="post-button-clear"
+      *ngIf="searchText"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="search((searchText = ''))"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <button id="post-button-search" mat-raised-button color="primary" (click)="search(searchText)">Search</button>
+</div>
+
+<mat-divider></mat-divider>

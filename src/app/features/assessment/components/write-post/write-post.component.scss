@@ -1,0 +1,15 @@
+:host {
+  width: 50%;
+}
+
+.write-post {
+  padding: 1rem 0;
+
+  &__input {
+    width: 100%;
+  }
+
+  &__button {
+    display: block;
+  }
+}

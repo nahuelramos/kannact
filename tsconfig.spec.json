@@ -1,0 +1,22 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "outDir": "./out-tsc/spec",
+    "types": [
+      "jest"
+    ],
+    "paths": {
+      "@/*": ["src/app/*"],
+      "@environment": ["src/environments/environment.ts"],
+    }
+  },
+  "files": [
+    "./setup-jest.ts"
+  ],
+  "include": [
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts"
+  ]
+}

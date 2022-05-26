@@ -1,0 +1,13 @@
+<mat-divider></mat-divider>
+<div class="write-post">
+  <h4>Write your post:</h4>
+  <mat-form-field class="write-post__input" appearance="fill">
+    <mat-label>Write your post</mat-label>
+    <textarea matInput placeholder="Ex. This is a post" [(ngModel)]="postText" maxlength="100"></textarea>
+  </mat-form-field>
+  <div class="write-post__button">
+    <button mat-raised-button color="primary" (click)="sendPost()">Send post</button>
+  </div>
+</div>
+
+<mat-divider></mat-divider>

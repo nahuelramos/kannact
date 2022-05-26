@@ -1,0 +1,14 @@
+.card {
+  padding: 5rem 0px;
+  position: relative;
+}
+
+.post {
+  padding: 0 1rem;
+
+  &__date {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
